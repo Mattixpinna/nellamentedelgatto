@@ -36,20 +36,22 @@ public/
 - I pulsanti "Richiedi una consulenza" puntano al Google Form: per cambiarlo
   cerca `docs.google.com/forms` nelle tre pagine.
 
+## Indirizzi delle pagine
+
+I link interni non hanno l'estensione: `chi-sono` invece di `chi-sono.html`,
+`./` per la home. GitHub Pages risponde a `/chi-sono` con `chi-sono.html`.
+
 ## Anteprima in locale
 
 ```sh
-cd public
-python3 -m http.server 8765
+python3 scripts/anteprima.py
 ```
 
 e apri http://localhost:8765. Su macOS basta un doppio clic su
-`scripts/anteprima.command`.
+`scripts/anteprima.command`. Lo script si comporta come GitHub Pages; il server
+standard (`python3 -m http.server`) non trova gli indirizzi senza `.html`.
 
 ## Pubblicazione
 
 Il sito è pubblicato con GitHub Pages: a ogni push sul branch `main` il workflow
 `.github/workflows/pages.yml` pubblica il contenuto di `public/`.
-
-I percorsi sono relativi, quindi il sito funziona anche aprendo
-`public/index.html` dal disco.
