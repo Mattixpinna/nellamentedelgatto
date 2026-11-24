@@ -235,6 +235,7 @@ body.pagina-home { background: #FBF3E7; }
 body.pagina-chi-sono { background: #F3E4D0; }
 body.pagina-come-lavoro { background: #F3E4D0; }
 body.pagina-privacy { background: #F3E4D0; }
+body.pagina-errore { background: #F3E4D0; }
 
 }
 
@@ -2756,5 +2757,107 @@ body.pagina-privacy { background: #F3E4D0; }
   .privacy-testo li {
     font-size: 16px;
     line-height: 1.72;
+  }
+}
+
+/* 404 */
+.errore {
+  width: 100%;
+  background: #F3E4D0;
+}
+.errore__div {
+  background: #FBF3E7;
+}
+.errore-testo {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 112px 0 136px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.errore-testo__img {
+  width: auto;
+  height: 96px;
+  margin-bottom: 28px;
+}
+.errore-testo__codice {
+  font-size: 14px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #556652;
+}
+.errore-testo h1 {
+  margin-top: 16px;
+  font-size: 46px;
+  line-height: 1.12;
+  letter-spacing: -0.012em;
+}
+.errore-testo p {
+  margin-top: 20px;
+  max-width: 560px;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #4A3B31;
+}
+.errore-testo__azioni {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+.errore-testo__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  background: #A84B32;
+  color: #FDFAF6;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px 40px;
+  border-radius: 999px;
+  text-decoration: none;
+  --halo: color-mix(in srgb, #A84B32 38%, transparent);
+  --arrow: 19px;
+}
+.errore-testo__link,
+.errore-testo__link:hover {
+  font-size: 17px;
+  font-weight: 600;
+  color: #A84B32;
+  text-decoration: none;
+  border-bottom: 1px solid #D8B9AC;
+  padding-bottom: 4px;
+}
+@media (max-width: 1199px) {
+  .errore-testo {
+    max-width: 680px;
+    padding: 64px 20px 80px;
+  }
+  .errore-testo__img {
+    height: 80px;
+    margin-bottom: 22px;
+  }
+  .errore-testo h1 {
+    font-size: 34px;
+    line-height: 1.14;
+  }
+  .errore-testo p {
+    font-size: 16px;
+    line-height: 1.72;
+  }
+  .errore-testo__azioni {
+    align-self: stretch;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .errore-testo__cta {
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    padding: 19px 24px;
   }
 }

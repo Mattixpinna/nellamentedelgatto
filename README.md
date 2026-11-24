@@ -14,6 +14,7 @@ public/
 ├── chi-sono.html
 ├── come-lavoro.html
 ├── privacy.html      informativa privacy (testo unico per desktop e mobile)
+├── 404.html          pagina per gli indirizzi inesistenti
 └── assets/
     ├── css/style.css
     ├── js/main.js
